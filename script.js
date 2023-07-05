@@ -698,6 +698,22 @@ canvas3()
 
 
 ///////////////page 7 circle
+gsap.from("#page7-cir", {
+    scrollTrigger:{
+      trigger: `#page7-cir`,
+      start: `top bottom`,
+      end: `bottom top`,
+      // markers: true,
+      scroller: `#main`,
+      scrub: .5,
+    },
+  // backgroundColor: '#0A3BCE91',
+  scale: 0,
+  opacity: 0,
+
+})
+
+
 	gsap.to("#page7-cir", {
 		scrollTrigger:{
 			trigger: `#page7-cir`,
@@ -743,3 +759,57 @@ canvas3()
 			// x: -30,
 	scale: 1.15,
 })
+
+
+
+
+
+
+
+
+// // var page7_spannumber = document.querySelector("#page7-spannumber");
+// // console.log(page7_spannumber) 
+// for (i = 0; i <= 60; i++) {
+//   document.querySelector("#page7-spannumber").innerHTML += `0`;
+// }
+
+
+
+
+const counters = document.querySelectorAll('.counter');
+let interval = 5000;
+counters.forEach((counter) => {
+    let startValue = 0;
+    let endValue = parseInt(counter.getAttribute('data-count'));
+    console.log(endValue);
+    let duration = Math.floor(interval / endValue);
+    let counter_1 = setInterval(function(){
+      startValue += 1;
+      counter.textContent= startValue;
+      if (startValue == endValue) {
+        clearInterval(counter_1);
+      }
+    });
+})
+
+    // // iterate through all the counter elements
+    // counters.forEach(counter => {
+    //   // function to increment the counter
+    //   function updateCount() {
+    //     const target = +counter.getAttribute('data-count');
+    //     const count = +counter.innerHTML;
+
+    //     const inc = Math.floor((target - count) / 50);
+
+    //     if (count < target && inc > 0) {
+    //       counter.innerHTML = (count + inc);
+    //       // repeat the function
+    //       setTimeout(updateCount, 5000);
+    //     }
+    //     // if the count not equal to target, then add remaining count
+    //     else {
+    //       counter.innerHTML = target;
+    //     }
+    //   }
+    //   updateCount();
+    // });

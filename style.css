@@ -5,7 +5,7 @@
 *{
 	margin:0;
 	padding:0;
-	font-family: 'Jost*', sans-serif;
+	font-family: 'Jost', sans-serif;
 	box-sizing: border-box;
 }
 html, body{
@@ -331,11 +331,30 @@ html, body{
 
 #page7-cir-inner{
 	height: 70%;
-	border: 1px solid rgba(218, 218, 218, 0.41176);
+	border: 1px solid rgba(218, 218, 218, 1);
 	width: 70%;
 	border-radius: 50%;
 	background-color: transparent;
+	display: flex;
+	align-items:center;
+	justify-content:center;
+	flex-direction:column;
+	color: white;
 }
+
+#page7-cir-inner > h2{
+	font-size:2rem;
+	font-weight: 500;
+/*	color: red !important;*/
+}
+
+
+#page7-cir-inner > p{
+	font-size: 0.75rem;
+	font-weight: 300;
+/*	color: red !important;*/
+}
+
 
 #page8{
 	min-height: 100vh;
@@ -359,13 +378,12 @@ html, body{
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
-    font-family: a;
 }
 .page8-bottom>h1{
     color: #fff;
     margin-bottom: 2vw;
     font-size: 5vw;
-    font-weight: 100;
+    font-weight: 300;
 }
 .page8-bottom>button{
     padding: 20px 30px;
@@ -382,7 +400,6 @@ html, body{
 	    left: 50%;
 	    transform: translateX(-50%);
 	    text-align: center;
-/*	    font-family: a;*/
 	}
 	.page8-bottom>h1{
 	    color: #fff;
@@ -416,7 +433,6 @@ html, body{
     height: 100%;
     width: 40%;
     position: relative;
-    font-family: a;
 }
 .left9>h1{
     position: absolute;
@@ -424,7 +440,7 @@ html, body{
     right: 5%;
     transform: translateY(-50%);
     font-size: 5vw;
-    font-weight: 100;
+    font-weight: 300;
     color: #fff;
     line-height: 1;
 }
@@ -463,7 +479,6 @@ html, body{
     flex-direction: column;
     height: 33.3%;
     width: 100%;
-    font-family: a;
     color: #fff;
 }
 .right10-inner>h1{
@@ -488,7 +503,6 @@ html, body{
 		    flex-direction: column;
 		    height: 33.3%;
 		    width: 100%;
-		/*    font-family: a;*/
 		    color: #fff;
 		}
 		.right10-inner>h1{
@@ -511,7 +525,6 @@ html, body{
     height: 110vh;
     width: 100vw;
     background-color: #fff;
-    font-family: a;
 }
 #page11>h1{
     position: absolute;
@@ -569,7 +582,6 @@ html, body{
     top: 20%;
     right: 10%;
     color: #fff;
-    font-family: a;
 }
 .page12-inner>h1{
     font-size: 5vw;
@@ -597,7 +609,6 @@ html, body{
 /*		    top: 50%;*/
 /*		    right: 50%;*/
 		    color: #fff;
-		    font-family: a;
 		}
 		.page12-inner>h1{
 		    font-size: 2.5rem;
@@ -618,7 +629,6 @@ html, body{
     width: 100vw;
     background-color: #000;
     color: #fff;
-    font-family: a;
     padding: 7vw 10vw;
 }
 #page13>h1{
@@ -632,10 +642,8 @@ html, body{
     line-height: 1;
     font-weight: 100;
     margin-bottom: 20px;
+	}
 }
-}
-
-
 
 #page13>button{
     padding: 18px 30px;
@@ -645,8 +653,6 @@ html, body{
     border-radius: 50px;
     margin-top: 2vw;
 }
-
-
 #page14{
     position: relative;
     height: 60vh;
@@ -659,7 +665,6 @@ html, body{
     align-items: center;
     justify-content: space-between;
     padding: 0vw 5vw;
-    font-family: a;
     height: 33.3%;
     width: 100%;
     color: #fff;
@@ -678,7 +683,6 @@ html, body{
     position: relative;
     z-index: 9999;
 }
-
 .center14{
     height: 0%;
     width: 100%;
@@ -689,8 +693,6 @@ html, body{
     transform: translate(-50%,-50%);
     transition: all ease .5s;
 }
-
-
 .page14-inner:hover .center14{
     height: 100%;
 }
